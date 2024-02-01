@@ -1,48 +1,43 @@
-<style type="text/css">
-body {
-   margin: 0;
-   padding: 0;
-}
-</style>
-<script src="//ssl.p.jwpcdn.com/player/v/8.26.0/jwplayer.js"></script>
-<script> jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';
-</script>
-<meta name="referrer" content="no-referrer">
-<script type="text/javascript">
-function getParameterByName(name) {
-	name = name.replace(/[\[]/, "\[").replace(/[\]]/, "\]");
-	var regex = new RegExp("[\?&]" + name + "=([^&#]*)"),
-	results = regex.exec(location.search);
-	return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-}
+<!DOCTYPE html>
+<html lang="en">
 
-var get = getParameterByName('get');
-var key = getParameterByName('key');
-var key2 = getParameterByName('key2');
-</script>
-<div id="player"></div>
-<script type="text/javascript">
-var playerInstance = jwplayer("player");
+<head>
+    <script src="https://ssl.p.jwpcdn.com/player/v/8.26.0/jwplayer.js"></script>
+    <style>
+        .jw-rightclick {
+            display: none !important;
+        }
+    </style>
+</head>
 
-playerInstance.setup({
-	playlist: [{
-		"sources": [
-			{
-				"default": false,
-				"type": "dash",
-				"file": atob(get),
-				"drm": {
-					"clearkey": { "keyId": atob(key), "key": atob(key2) }
-				},
-				"label": "0"
-			}
-		]
-	}],
-	width: "100%",
-	height: "100%",
-	aspectratio: "16:9",
-	autostart: false,
-	cast: {},
-	sharing: {}
-});
-</script>
+<body style="padding: 0px; margin:0px;background:black" oncontextmenu="return false" onkeydown="return false">
+    <div id="player"></div>
+    <script type="text/javascript">
+        jwplayer.key = "XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo";
+        var data = jwplayer("player");
+        var idParameter = '037';
+        data.setup({
+            playlist: [{
+                "title": "",
+                "sources": [{
+                    "default": false,
+                    "type": "dash",
+                    "file": `https://dcf-ak-livewwdazn.akamaized.net/dashrdm/dazn-linear-${idParameter}/stream.mpd?p=web&dazm-token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9eyJleHAiOjE3MDU4ODg1ODIsImtpZCI6IjIwMjIxMTIzIiwicGF0aF9kIjoyLCJwYXRoIjoiNzE1N2E4Yzc3M2FlZTNhMDQyNTIyZWU5NGYxZWQ5MzZhMGYxMzg3NCIsImdlbyI6InB0IiwiaWF0IjoxNzA1ODQ1MzgyfQ`,
+                    "drm": {
+                        "clearkey": { "keyId": "82f8e2a17dac44c0a18f660479349c59", "key": "1b144f73e6fefe91cd05f850e2b589d0" }
+                    },
+                }]
+            }], width: "100%",
+            height: "100%",
+            aspectratio: "16:9",
+            autostart: true,
+            cast: {},
+            sharing: {}
+        });
+    </script>
+    <script
+        type="text/javascript">var _Hasync = _Hasync || []; _Hasync.push(["Histats.start", "1,4762222,4,0,0,0,00010000"]), _Hasync.push(["Histats.fasi", "1"]), _Hasync.push(["Histats.track_hits", ""]), function () { var s = document.createElement("script"); s.type = "text/javascript", s.async = true, s.src = "//s10.histats.com/js15_as.js", (document.getElementsByTagName("head")[0] || document.getElementsByTagName("body")[0]).appendChild(s) }()</script>
+    <noscript><img src="//sstatic1.histats.com/0.gif?4762222&101" style="display:none" alt="" border="0"></noscript>
+<!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "13247cfafbfc480b863de63d88122e0b"}'></script><!-- Cloudflare Pages Analytics --></body>
+
+</html>
