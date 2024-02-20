@@ -28,7 +28,7 @@
 			"event_url_4": ""
 		}
 	],
-	"event_date": "Domingo 14 de ENE - GMT-3",
+	"event_date": "Miercoles 21 de Enero",
 	"events": [
 	    {
 			"event_name_time": "NOTA: Se detiene la transmision? Simplemente actualiza o recarga la aplicacion.",
@@ -48,7 +48,7 @@
 			"event_name_time": "",
 			"event_type_url": "Exo",
 			"event_url_1": "",
-			"event_url_2": "https://cdn.digital.com.bo/__cl/cg:sworigin2/__c/ATB/__op/hls-default/__f/index.m3u8",
+			"event_url_2": "",
 			"event_url_3": "",
 			"event_url_4": "",
 			"event_url_5": "",
@@ -66,11 +66,11 @@
 			"event_url_3": "https://v3.sportsonline.so/channels/hd/hd2.php",
 			"event_url_4": "https://v3.sportsonline.so/channels/pt/eleven1.php",
 			"event_url_5": "https://v3.sportsonline.so/channels/bra/br3.php",
-			"event_url_6": "",
-			"event_url_7": "",
-			"event_url_8": "",
-			"event_url_9": "",
-			"event_url_0": ""
+			"event_url_6": "1",
+			"event_url_7": "1",
+			"event_url_8": "1",
+			"event_url_9": "1",
+			"event_url_0": "1"
 		},
 		{
 			"event_name_time": "13:30 Borussia Mgladbach vs Stuttgart",
